@@ -2,14 +2,8 @@
 <html manifest="demo.appcache ">
 
   
-  <head> 
-      <script>
-       document.addEventListener('offline', function(e) { alert('Offline'); }); 
-       document.addEventListener('online', function(e) { alert('Online') });    
-    </script>    
-  </head>
   
-<body>
+<body ononline="alert('Online');" onoffline="alert('Offline');">
 <h1>Pagina Online</h1>
 
 
